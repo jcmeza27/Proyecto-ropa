@@ -12,9 +12,9 @@
   <meta name="keywords" content="Moda, Calidad, Variedad, Marcas, Innovación">
   <meta name="author" content="Juan Carlos Meza">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<!-- Font-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 <title>Street Stock | Las mejores marcas de ropa </title>
 <!--El tag de title es para como quiero que se muestre en la web-->
@@ -51,10 +51,12 @@
          </ul>
 
     </nav>
-    
-    <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">☰</button>
-    </div>
-    
+    <!--Botón menú móvil-->
+    <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    <!--Navegación Móvil-->
     <nav id="mobile-menu" class="mobile-nav">
       <ul>
          <li>
@@ -79,34 +81,120 @@
     
     </header>
 
-    <main>
+    <!-- INICIO MAIN (PRINCIPAL) del DESARROLLO WEB-->
 
-        <section id="carrusel" class="carousel-section container">
-            <h2>Bienvenido a la casa del street</h2>
-            <div class="carousel-track" id="carouseltrackebc">
-                <!-- Primera imagen hero-->
+    <main>
+        
+        <section id="inicio" class="hero-section">
+           <div class="carousel-track" id="carouseltrackebc">
+                 <!-- Diapositiva 1 (tu Branding)-->
                 <div class="carousel-slide">
                     <img src="img/hero1.jpg" alt="imagen Street Stock hero">
+                    <div class="slide-overlay">
+                        <span class="badge">Descubre nuestro catalogo</span>
+                        <h1>Las marcas más top <span class="highlight-yellow"> de sneakers y ropa</span></h1>
+                        <p>Transformamos tu espacio en una experiencia audiovisual inmersiva fuera de este mundo.</p>
+                        <a href="#servicios" class="btn-hero">Descubrir catalogo</a>
+                    </div>
                 </div>
                 <!--Segunda imagen de hero-->
                 <div class="carousel-slide">
                     <img src="img/hero2.jpg" alt="imagen Street Stock1 hero">
+                    <div class="slide-overlay">
+                        <span class="badge">El nuevo modelo de Jordan</span>
+                        <h1>Descubre <span class="highlight-yellow">El nuevo modelo</span></h1>
+                        <p>Transformamos tu espacio en una experiencia audiovisual inmersiva fuera de este mundo.</p>
+                        <a href="#servicios" class="btn-hero">Compra ahora</a>
+                    </div>
                 </div>
                 <!-- Tercera imagen hero-->
                 <div class="carousel-slide">
                     <img src="img/hero3.jpg" alt="imagen Street Stock2 hero">
+                    <div class="slide-overlay">
+                        <span class="badge">Lo nuevo en ropa</span>
+                        <h1>La moda <span class="highlight-yellow">En Tu Closet</span></h1>
+                        <p>Transformamos tu closet en flow.</p>
+                        <a href="#servicios" class="btn-hero">Ver modelos</a>
+                    </div>
                 </div>
 
             </div>
 
+             <!-- Botones de Navegación del Carrusel -->
+            <button id="btn-prev" class="carousel-arrow prev" aria-label="Imagen anterior">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button id="btn-next" class="carousel-arrow next" aria-label="Imagen siguiente">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            <!-- Puntos Indicadores -->
+            <div class="carousel-dots" id="carousel-dots">
+                <button class="dot active" aria-label="Ir a diapositiva 1"></button>
+                <button class="dot" aria-label="Ir a diapositiva 2"></button>
+                <button class="dot" aria-label="Ir a diapositiva 3"></button>
+            </div>
+
         </section>
 
+        <!-- SECCIÓN DE SERVICIOS -->
+        <section id="servicios" class="servicios-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>NUESTROS PRODUCTOS</h2>
+                    <h3>Todas las marcas que te gustan las tenemos</h3>
+                </div>
 
-<p>This is a paragraph.</p>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon yellow"><i class="fa-solid fa-couch"></i></div>
+                        <h4>Marcas populares</h4>
+                        <p> Nuevos modelos disponible</p>
+                    </div>
+                
+                <div class="card">
+                        <div class="card-icon red"><i class="fa-solid fa-volume-high"></i></div>
+                        <h4>Moda streetwear</h4>
+                        <p>La mejores marcas de streetwear las tenemos nosotros.</p>
+                    </div>
+                
+                <div class="card">
+                        <div class="card-icon yellow"><i class="fa-solid fa-microchip"></i></div>
+                        <h4>Sneakers</h4>
+                        <p>Los mejores sneakers del 2026 los tenemos nosotros.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-     </main>
+        <!-- SECCIÓN NOSOTROS -->
+        <section id="nosotros" class="nosotros-section">
+            <div class="container nosotros-inner">
+                <div class="nosotros-img">
+                    <img src="img/producto 6.png" alt="Street Stock">
+                </div>
+                <div class="nosotros-info">
+                    <h2>SOBRE NOSOTROS</h2>
+                    <h3>Apasionados por el mundo de la moda y sneakers</h3>
+                    <p>En <strong>Street Stock</strong>, bajo la dirección de el Lic. Juan Carlos Meza .</p>
+                    <p>Brindamos el mejor servicio de venta al cliente y conseguimos su prenda o sneakers que desea.</p>
+                    <div class="stats">
+                        <div class="stat-box">
+                            <span class="stat-num yellow">+1000</span>
+                            <span class="stat-lbl">Clientes</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-num red">100%</span>
+                            <span class="stat-lbl">Satisfacción</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+</main>
+ 
 
-     <footer>
+    <footer>
   <div class="footer-social">
     <div class="container social-icons">
       <a href="https://www.facebook.com/" aria-label="Facebook">
